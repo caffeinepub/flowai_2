@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "BricolageGrotesque";
+  src: url("/assets/fonts/BricolageGrotesque.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url("/assets/fonts/GeneralSans.woff2") format("woff2");
+  font-weight: 200 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* FlowAI: dark navy/blue theme matching logo */
+    --background: 0.14 0.04 264;
+    --foreground: 0.96 0.01 220;
+    --card: 0.18 0.04 264;
+    --card-foreground: 0.96 0.01 220;
+    --popover: 0.18 0.04 264;
+    --popover-foreground: 0.96 0.01 220;
+    --primary: 0.76 0.13 185;
+    --primary-foreground: 0.1 0.02 264;
+    --secondary: 0.2 0.04 264;
+    --secondary-foreground: 0.96 0.01 220;
+    --muted: 0.22 0.04 264;
+    --muted-foreground: 0.62 0.03 220;
+    --accent: 0.2 0.04 264;
+    --accent-foreground: 0.96 0.01 220;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.26 0.05 264;
+    --input: 0.26 0.05 264;
+    --ring: 0.76 0.13 185;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "GeneralSans", ui-sans-serif, system-ui, sans-serif;
+  }
+}
